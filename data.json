@@ -1,7 +1,12 @@
 [
   {
-    "file": "experiments/example.js",
-    "name": "Name of your experiment",
-    "description": "Explains the what and the why. What is the main idea? What is the purpose? Describes the coding process and implementation choices and gives a high level system overview."
+    "file": "experiments/variation1.js",
+    "name": "Variation 1",
+    "description": "This variation is derived from CC Generative Art. The main idea is to generate a layered, overlapping pattern where some shapes are filled with random bright colors while others remain outlines, creating a visually rich and dynamic abstract pattern."
+  },
+  {
+    "file": "experiments/variation2.js",
+    "name": "Variation 2",
+    "description": "This variation is derived from CC Generative Art. The main idea is to create a more structured and grid-like pattern where shapes are aligned in rows and columns, looking like a mosiac in a church window."
   }
 ]

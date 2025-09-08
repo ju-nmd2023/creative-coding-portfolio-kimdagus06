@@ -11,11 +11,14 @@ function drawGrid(rotation, iteration) {
   const centerX = width / 2;
   const centerY = height / 2;
 
+  // Loop through grid positions (x, y offsets)
   for (let x = -Math.floor(amount / 2); x < Math.ceil(amount / 2); x++) {
     for (let y = -Math.floor(amount / 2); y < Math.ceil(amount / 2); y++) {
+      // Position shapes relative to canvas center
       let xPosition = centerX + x * (size + gap);
       let yPosition = centerY + y * (size + gap);
 
+      // Adjustment for even number of shapes (keeps grid centered)
       if (amount % 2 === 0) {
         xPosition += size / 2;
       }
@@ -40,6 +43,7 @@ function drawGrid(rotation, iteration) {
         stroke(0, 0, 10, 100);
       }
 
+      // Alternate between square and ellipse based on iteration count
       if (iteration % 2 === 0) {
         square(0, 0, size);
       } else {
@@ -64,6 +68,7 @@ function draw() {
   background(255);
   strokeWeight(1);
 
+  // Draw grid multiple times with increasing rotation
   for (let i = 0; i < 30; i++) {
     drawGrid(i * 0.5, i);
   }
