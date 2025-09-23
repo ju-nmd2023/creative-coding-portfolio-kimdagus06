@@ -1,3 +1,5 @@
+// Variation of: https://codepen.io/pixelkind/pen/qBLbzoW
+
 const size = 80;
 const gap = 20;
 const amount = 5;
