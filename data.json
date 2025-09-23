@@ -1,17 +1,17 @@
 [
   {
-    "file": "experiments/variation1-week1.js",
-    "name": "Variation 1 - Week 1",
+    "file": "experiments/week1-variation1.js",
+    "name": "Rainy Day - Week 1",
     "description": "Created a soft image by overlapping circles with random colors. It is inspired by raindrops on a rainy day and the rainbow reflected on them with a lowered transparency."
   },
   {
-    "file": "experiments/variation2-week1.js",
-    "name": "Variation 2 - Week 1",
+    "file": "experiments/week1-variation2.js",
+    "name": "Rose Window - Week 1",
     "description": "The main idea is to create a more structured and grid-like pattern where shapes are aligned in rows and columns, looking like a mosiac in a church window."
   },
   {
-    "file": "experiments/variation3-week1.js",
-    "name": "Variation 3 - Week 1",
+    "file": "experiments/week1-variation3.js",
+    "name": "Nested Squares - Week 1",
     "description": "This variation is inspired by nested square pattens and line thickness variations, I created a piece that features a grid of nested squares with varying stroke weights and colors, set against a cloud perlin noise."
   },
   {
