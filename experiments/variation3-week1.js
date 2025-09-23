@@ -6,16 +6,26 @@ const size = 75;
 const gap = 27;
 const amount = 7;
 const rotationMax = 15; // Maximum rotation angle in degrees
-const nestedSteps = 7; // How many nested squares
+const nestedSquares = 7;
 
 function setup() {
   createCanvas(innerWidth, innerHeight);
   rectMode(CENTER);
   noLoop();
   noFill();
-  stroke(0);
-  strokeWeight(2);
-  background(44, 59, 89);
+
+  // Perlin noise background
+  // Variation of: https://codepen.io/pixelkind/pen/wvRMVwy
+  noiseSeed(0);
+  noStroke();
+  const divider = 100;
+  for (let x = 0; x < innerWidth; x++) {
+    for (let y = 0; y < innerHeight; y++) {
+      const value = noise(x / divider, y / divider) * 255;
+      fill(value * 0.5, value * 0.5, value);
+      rect(x, y, 1, 1);
+    }
+  }
 }
 
 function draw() {
@@ -43,7 +53,7 @@ function draw() {
       rotate(rotation);
 
       // Draw nested squares
-      for (let k = 0; k < nestedSteps; k++) {
+      for (let k = 0; k < nestedSquares; k++) {
         let s = dynamicSize * (1 - k * 0.15) * random(0.9, 1.05); // Random size
         strokeWeight(random(0.5, 2)); // Random stroke weight
         // Randomness in stroke color
