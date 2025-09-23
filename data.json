@@ -1,10 +1,5 @@
 [
   {
-    "file": "experiments/week2-variation1.js",
-    "name": "Variation 1 - Week 2",
-    "description": "Description"
-  },
-  {
     "file": "experiments/week1-variation1.js",
     "name": "Rainy Day - Week 1",
     "description": "Created a soft image by overlapping circles with random colors. It is inspired by raindrops on a rainy day and the rainbow reflected on them with a lowered transparency."
@@ -20,8 +15,13 @@
     "description": "This variation is inspired by nested square pattens and line thickness variations, I created a piece that features a grid of nested squares with varying stroke weights and colors, set against a cloud perlin noise."
   },
   {
-    "file": "experiments/variation2-week2.js",
-    "name": "Variation 2 - Week 2",
+    "file": "experiments/week2&3-variation1.js",
+    "name": "Explosion - Week 2&3",
+    "description": "Popping colors and shapes that look like an explosion. This piece is inspired by the fireworks and the CodePen Home Creative Coding - Particle experiment by Garrit."
+  },
+  {
+    "file": "experiments/week2&3-variation2.js",
+    "name": "Variation 2 - Week 2&3",
     "description": "Description"
   }
 ]
