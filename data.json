@@ -23,5 +23,10 @@
     "file": "experiments/week2&3-variation2.js",
     "name": "Variation 2 - Week 2&3",
     "description": "Description"
+  },
+  {
+    "file": "experiments/week4-variation.js",
+    "name": "Variation - Week 4",
+    "description": "Description"
   }
 ]
