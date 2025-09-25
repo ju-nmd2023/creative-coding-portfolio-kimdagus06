@@ -6,20 +6,15 @@ const style = document.createElement("style");
 style.innerHTML = `
 body, html { height: 100%; margin:0; }
 body { background-color: rgba(25,25,25,1); overflow:hidden; }
-#blackhole { height: 100%; width: 100%; position: relative; display: flex; }
 canvas { position: absolute; top:0; left:0; width:100%; height:100%; }
 `;
 document.head.appendChild(style);
 
-// -------------------- Black hole --------------------
-const blackholeDiv = document.createElement("div");
-blackholeDiv.id = "blackhole";
-document.body.appendChild(blackholeDiv);
-
+// -------------------- Create a canvas --------------------
 const canvas = document.createElement("canvas");
 canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
-blackholeDiv.appendChild(canvas);
+document.body.appendChild(canvas);
 const ctx = canvas.getContext("2d");
 
 const centerX = canvas.width / 2;
@@ -27,7 +22,6 @@ const centerY = canvas.height / 2;
 const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 const letterObjects = [];
 
-// -------------------- Initiate characters --------------------
 for (let i = 0; i < letters.length; i++) {
   letterObjects.push({
     char: letters[i],
@@ -38,18 +32,22 @@ for (let i = 0; i < letters.length; i++) {
 }
 
 function loop() {
-  ctx.fillStyle = "rgba(25,25,25,0.12)";
+  ctx.fillStyle = "rgba(25,25,25,0.15)";
   ctx.fillRect(0, 0, canvas.width, canvas.height);
-
-  ctx.fillStyle = "white";
-  ctx.font = "30px monospace";
-  ctx.textAlign = "center";
-  ctx.textBaseline = "middle";
 
   letterObjects.forEach((obj) => {
     obj.angle += obj.speed;
+
     const x = centerX + Math.cos(obj.angle) * obj.radius;
     const y = centerY + Math.sin(obj.angle) * obj.radius;
+
+    const shine = 0.4 + Math.random() * 0.6;
+    const size = 28 + Math.random() * 6;
+    ctx.fillStyle = `rgba(255,255,255,${shine})`;
+    ctx.font = `${size}px monospace`;
+    ctx.textAlign = "center";
+    ctx.textBaseline = "middle";
+
     ctx.fillText(obj.char, x, y);
   });
 

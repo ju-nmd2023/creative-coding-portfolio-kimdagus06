@@ -20,9 +20,11 @@ function draw() {
   noStroke();
   rect(0, 0, width, height);
 
+  // Makes elements wiggle side to side using x = width/2 + sin(t)*(width/3)
+  // t just keeps ticking to drive the wobble, tweak width/3 for how far and t++ for how fast
   if (frameCount % 10 === 0) {
-    let x = width / 2 + sin(t) * (width / 3);
-    let y = random(height * 0.1, height);
+    let x = width / 2 + sin(t) * (width / 5);
+    let y = random(height * 0.5, height);
     createParticles(x, height, 0);
     t += 0.1;
   }
@@ -58,7 +60,7 @@ class Particle {
     this.generation = generation;
 
     // velocity and gravity
-    let speed = random(3, 8);
+    let speed = random(6, 10);
     this.vel = createVector(
       Math.cos((degree / 180) * PI) * speed,
       Math.sin((degree / 180) * PI) * speed - 5
