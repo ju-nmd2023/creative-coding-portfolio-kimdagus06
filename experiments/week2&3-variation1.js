@@ -1,5 +1,4 @@
 // Variation of: https://codepen.io/pixelkind/pen/poqEaoG
-
 // -------------------- References --------------------
 // Reference 1: Blanchette, M. (n.d.). Fireworks simulation [Code]. In J. Heglund (Animations). The Coding Train. https://thecodingtrain.com/challenges/27-fireworks
 // Reference 2: Heglund, J. (n.d.). Fireworks sketch [Online sketch]. p5.js Editor. https://editor.p5js.org/codingtrain/sketches/O2M0SO-WO
