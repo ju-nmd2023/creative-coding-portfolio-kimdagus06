@@ -31,8 +31,21 @@ function drawCirclePattern(x, y, baseSize) {
   pop();
 }
 
+// -------------------- Background --------------------
+function drawRadialGradient() {
+  let centerX = width / 2;
+  let centerY = height / 2;
+  noStroke();
+  for (let r = max(width, height); r > 0; r -= 5) {
+    let inter = map(r, 0, max(width, height), 0, 1);
+    let c = lerpColor(color(23, 97, 130), color(0, 0, 0), inter);
+    fill(c);
+    ellipse(centerX, centerY, r * 2, r * 2);
+  }
+}
+
 function draw() {
-  background(255);
+  drawRadialGradient(); // Draw gradient background
 
   const startX = (width - (size + gap) * amount) / 2;
   const startY = (height - (size + gap) * amount) / 2;
