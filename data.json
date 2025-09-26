@@ -12,7 +12,7 @@
   {
     "file": "experiments/week1-variation3.js",
     "name": "Nested Squares - Week 1",
-    "description": "This variation is inspired by nested square pattens and line thickness variations, I created a piece that features a grid of nested squares with varying stroke weights and colors, set against a cloud perlin noise."
+    "description": "This variation is inspired by nested square pattens and line thickness variations, I created a piece that features a grid of nested squares with varying stroke weights and colors."
   },
   {
     "file": "experiments/week2&3-variation1.js",
