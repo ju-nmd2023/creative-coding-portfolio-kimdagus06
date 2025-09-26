@@ -11,18 +11,34 @@ let flowfield;
 let particles = [];
 
 function setup() {
-  createCanvas(800, 600);
+  createCanvas(innerWidth, innerHeight);
   cols = floor(width / scale);
   rows = floor(height / scale);
 
   flowfield = new Array(cols * rows);
+
+  // ---------------- Radial Gradient Background ----------------
+  drawRadialGradient();
+  // ----------------------------------------------------------------
 
   // Create particles
   for (let i = 0; i < 2000; i++) {
     particles[i] = new Particle();
   }
 
-  background(20);
+  // background(20);
+}
+
+function drawRadialGradient() {
+  let centerX = width / 2;
+  let centerY = height / 2;
+  noStroke();
+  for (let r = max(width, height); r > 0; r -= 5) {
+    let inter = map(r, 0, max(width, height), 0, 1);
+    let c = lerpColor(color(20, 30, 60), color(255, 255, 255), inter);
+    fill(c);
+    ellipse(centerX, centerY, r * 2, r * 2);
+  }
 }
 
 function draw() {
