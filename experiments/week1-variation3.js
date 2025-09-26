@@ -37,7 +37,7 @@ function drawTile(x, y, baseSize) {
 }
 
 function draw() {
-  background(0);
+  background(8, 7, 7); // Dark background
 
   const startX = (width - (size + gap) * amount) / 2 + size / 2;
   const startY = (height - (size + gap) * amount) / 2 + size / 2;
