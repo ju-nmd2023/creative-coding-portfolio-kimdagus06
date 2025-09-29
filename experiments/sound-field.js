@@ -1,4 +1,5 @@
-// Reference and variation of: https://www.tylerxhobbs.com/words/flow-fields
+// -------------------- Inspirations --------------------
+// Variation of: https://www.tylerxhobbs.com/words/flow-fields
 // -------------------- References --------------------
 // Reference 1: Pogany. (n.d.). Regular flow field. CodePen. https://codepen.io/giaco/pen/RzERNL
 // Reference 2: Hobbs, T. (2020, February 3). Flow fields. Tyler Hobbs. https://www.tylerxhobbs.com/words/flow-fields

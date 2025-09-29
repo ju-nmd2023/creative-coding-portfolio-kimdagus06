@@ -1,3 +1,4 @@
+// -------------------- Inspirations --------------------
 // Variation of: https://codepen.io/pixelkind/pen/qBLbzoW
 
 const size = 60;

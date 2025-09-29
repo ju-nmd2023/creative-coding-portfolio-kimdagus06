@@ -18,6 +18,7 @@ function setup() {
       char: letters[i],
       angle: random(TWO_PI),
       radius: 100 + random(150),
+      // Random direction and speed
       speed: (0.005 + random(0.1)) * (random() < 0.5 ? 1 : -1),
     });
   }
