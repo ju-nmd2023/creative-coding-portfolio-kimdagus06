@@ -1,7 +1,7 @@
 [
   {
-    "file": "experiments/week1-variation1.js",
-    "name": "Rainy Day - Week 1",
+    "file": "experiments/rainyday.js",
+    "name": "Rainy Day",
     "description": "Created a soft image by overlapping circles with random colors. It is inspired by raindrops on a rainy day and the rainbow reflected on them with a lowered transparency."
   },
   {

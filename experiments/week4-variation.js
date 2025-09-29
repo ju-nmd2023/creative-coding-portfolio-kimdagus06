@@ -10,6 +10,8 @@ let inc = 0.1; // noise increment
 let flowfield;
 let particles = [];
 
+let synth;
+
 function setup() {
   createCanvas(innerWidth, innerHeight);
   cols = floor(width / scale);
