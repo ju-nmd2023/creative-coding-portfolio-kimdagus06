@@ -6,7 +6,7 @@ let letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 let letterObjects = [];
 
 function setup() {
-  createCanvas(windowWidth, windowHeight);
+  createCanvas(innerWidth, innerHeight);
   background(25);
   centerX = width / 2;
   centerY = height / 2;
@@ -45,7 +45,7 @@ function draw() {
 }
 
 function windowResized() {
-  resizeCanvas(windowWidth, windowHeight);
+  resizeCanvas(innerwWidth, innerHeight);
   centerX = width / 2;
   centerY = height / 2;
 }

@@ -8,7 +8,7 @@ let t = 0; // time variable
 let gravity;
 
 function setup() {
-  createCanvas(windowWidth, windowHeight);
+  createCanvas(innerWidth, innerHeight);
   colorMode(HSB);
   gravity = createVector(0, 0.2);
   background(0);
