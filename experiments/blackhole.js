@@ -22,6 +22,7 @@ const centerY = canvas.height / 2;
 const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 const letterObjects = [];
 
+// -------------------- Create artwork  --------------------
 for (let i = 0; i < letters.length; i++) {
   letterObjects.push({
     char: letters[i],

@@ -5,28 +5,28 @@
     "description": "Created a soft image by overlapping circles with random colors. It is inspired by raindrops on a rainy day and the rainbow reflected on them with a lowered transparency."
   },
   {
-    "file": "experiments/week1-variation2.js",
-    "name": "Rose Window - Week 1",
+    "file": "experiments/rose-garden-window.js",
+    "name": "Rose Garden Window",
     "description": "The main idea is to create a more structured and grid-like pattern where shapes are aligned in rows and columns, looking like a mosiac in a church window."
   },
   {
-    "file": "experiments/week1-variation3.js",
-    "name": "Nested Squares - Week 1",
-    "description": "This variation is inspired by nested square pattens and line thickness variations, I created a piece that features a grid of nested squares with varying stroke weights and colors."
+    "file": "experiments/nested-squares.js",
+    "name": "Nested Squares",
+    "description": "This work is inspired by nested square patterns and line thickness variations. I created a piece featuring a grid of nested squares with different stroke weights and colors. The squares get smaller toward the center, giving a subtle impression of being in space."
   },
   {
-    "file": "experiments/week2&3-variation1.js",
-    "name": "Explosion - Week 2&3",
-    "description": "Popping colors and shapes that look like an explosion. This piece is inspired by the fireworks and the CodePen Home Creative Coding - Particle experiment by Garrit."
+    "file": "experiments/sparkler.js",
+    "name": "Sparkler in Summer Night",
+    "description": "Popping colors and shapes that look like a sparkler (firework). I inspired by the fireworks and the CodePen Home Creative Coding - Particle experiment by Garrit."
   },
   {
-    "file": "experiments/week2&3-variation2.js",
-    "name": "Variation 2 - Week 2&3",
-    "description": "Description"
+    "file": "experiments/blackhole.js",
+    "name": "Black Hole",
+    "description": "It creates a dynamic field of rotating letters arranged around the center of the canvas. Each character orbits with its own speed, size, and brightness, leaving subtle motion trails that build a glowing, almost cosmic atmosphere."
   },
   {
-    "file": "experiments/week4-variation.js",
-    "name": "Variation - Week 4",
-    "description": "Description"
+    "file": "experiments/sound-field.js",
+    "name": "Sound Field",
+    "description": "This interactive work shows white particles moving over a radial gradient background. Clicking the mouse plays a random note with Tone.js, linking simple interaction to both sound and motion."
   }
 ]
