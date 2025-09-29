@@ -1,8 +1,8 @@
 // Variation of: https://codepen.io/pixelkind/pen/qBLbzoW
 
-const size = 80;
-const gap = 20;
-const amount = 5;
+const size = 90;
+const gap = 10;
+const amount = 7;
 
 function setup() {
   createCanvas(innerWidth, innerHeight);

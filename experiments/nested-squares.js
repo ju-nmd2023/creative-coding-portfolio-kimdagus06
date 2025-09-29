@@ -1,5 +1,5 @@
-// Variation of: https://codepen.io/pixelkind/pen/WNLraMw
 // -------------------- Inspirations --------------------
+// Variation of: https://codepen.io/pixelkind/pen/WNLraMw
 // Inspired by: https://www.youtube.com/watch?v=xw79GO2yk2Y&list=PLbLdd1fdNg5yp0x3_oRWeBur0FVX8PvFH&index=94
 // (YouTube - DRAWING MACHINE 17 | Grid with line thicknesses, time-lapse (Pen Plotter Art w/ AxiDraw, Processing))
 const size = 65;

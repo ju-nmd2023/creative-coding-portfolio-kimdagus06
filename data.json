@@ -20,6 +20,11 @@
     "description": "Created a soft image by overlapping circles with random colors. It is inspired by raindrops on a rainy day and the rainbow reflected on them with a lowered transparency."
   },
   {
+    "file": "experiments/abstract-water-drop.js",
+    "name": "Abstract Water Drop",
+    "description": "I initially imagined water drops and aimed to depict droplets scattered across a flower field. This is a variation of Rainy Day."
+  },
+  {
     "file": "experiments/sparkler.js",
     "name": "Sparkler in Summer Night",
     "description": "Popping colors and shapes that look like a sparkler (firework). I inspired by the fireworks and the CodePen Home Creative Coding - Particle experiment by Garrit."
