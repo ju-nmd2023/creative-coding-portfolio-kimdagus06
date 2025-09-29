@@ -1,10 +1,5 @@
 [
   {
-    "file": "experiments/sound-field copy.js",
-    "name": "Sound Field",
-    "description": "This interactive work shows white particles moving over a radial gradient background. Clicking the mouse plays a random note with Tone.js, linking simple interaction to both sound and motion."
-  },
-  {
     "file": "experiments/rose-garden-window.js",
     "name": "Rose Garden Window",
     "description": "The main idea is to create a more structured and grid-like pattern where shapes are aligned in rows and columns, looking like a mosiac in a church window."
@@ -38,6 +33,11 @@
     "file": "experiments/blackhole.js",
     "name": "Black Hole",
     "description": "It creates a dynamic field of rotating letters arranged around the center of the canvas. Each character orbits with its own speed, size, and brightness, leaving subtle motion trails that build a glowing, almost cosmic atmosphere."
+  },
+  {
+    "file": "experiments/green-flow-field.js",
+    "name": "Green Flow Field",
+    "description": "It shows green particles flowing along a perlin noise vector field over a radial gradient. Particle speed and transparency vary dynamically, creating depth and motion across the canvas"
   },
   {
     "file": "experiments/sound-field.js",

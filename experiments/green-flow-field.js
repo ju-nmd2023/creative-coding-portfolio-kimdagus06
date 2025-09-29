@@ -17,19 +17,13 @@ function setup() {
 
   flowfield = new Array(cols * rows);
 
-  // Tone.js setup
-  synth = new Tone.Synth().toDestination();
-
   // ---------------- Radial Gradient Background ----------------
   drawRadialGradient();
-  // ----------------------------------------------------------------
 
   // Create particles
   for (let i = 0; i < 2000; i++) {
     particles[i] = new Particle();
   }
-
-  // background(20);
 }
 
 function drawRadialGradient() {
@@ -38,7 +32,7 @@ function drawRadialGradient() {
   noStroke();
   for (let r = max(width, height); r > 0; r -= 5) {
     let inter = map(r, 0, max(width, height), 0, 1);
-    let c = lerpColor(color(20, 30, 60), color(255, 255, 255), inter);
+    let c = lerpColor(color(15, 14, 26), color(255, 97, 97), inter);
     fill(c);
     ellipse(centerX, centerY, r * 2, r * 2);
   }
@@ -65,7 +59,9 @@ function draw() {
     p.follow(flowfield);
     p.update();
     p.edges();
-    p.show();
+    // Control alpha based on y-position for depth effect
+    let alpha = map(p.pos.y, 0, height, 5, 25);
+    p.show(alpha);
   }
 }
 
@@ -79,9 +75,14 @@ class Particle {
     this.prevPos = this.pos.copy();
   }
 
+  // Update particle position by adding acceleration to velocity
   update() {
     this.vel.add(this.acc);
-    this.vel.limit(this.maxspeed);
+    this.vel.limit(
+      this.maxspeed *
+        (0.8 +
+          0.4 * noise(this.pos.x * 0.01, this.pos.y * 0.01, frameCount * 0.01))
+    );
     this.pos.add(this.vel);
     this.acc.mult(0);
   }
@@ -98,9 +99,9 @@ class Particle {
     this.applyForce(force);
   }
 
-  show() {
-    stroke(255, 20);
-    strokeWeight(1);
+  show(alphaVal = 20) {
+    stroke(20, 255, 169, alphaVal); // Line color
+    strokeWeight(2);
     line(this.pos.x, this.pos.y, this.prevPos.x, this.prevPos.y);
     this.prevPos.set(this.pos.x, this.pos.y);
   }

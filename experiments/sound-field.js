@@ -24,7 +24,6 @@ function setup() {
 
   // ---------------- Radial Gradient Background ----------------
   drawRadialGradient();
-  // ----------------------------------------------------------------
 
   // Create particles
   for (let i = 0; i < 2000; i++) {
@@ -38,7 +37,51 @@ function mousePressed() {
   Tone.start(); // Start the audio context on user interaction
 
   // Random note from a predefined set
-  let notes = ["C4", "E4", "G4", "B4", "D5", "F5"];
+  let notes = [
+    "C1",
+    "D1",
+    "E1",
+    "F1",
+    "G1",
+    "A1",
+    "B1",
+    "C2",
+    "D2",
+    "E2",
+    "F2",
+    "G2",
+    "A2",
+    "B2",
+    "C3",
+    "D3",
+    "E3",
+    "F3",
+    "G3",
+    "A3",
+    "B3",
+    "C4",
+    "D4",
+    "E4",
+    "F4",
+    "G4",
+    "A4",
+    "B4",
+    "C5",
+    "D5",
+    "E5",
+    "F5",
+    "G5",
+    "A5",
+    "B5",
+    "C6",
+    "D6",
+    "E6",
+    "F6",
+    "G6",
+    "A6",
+    "B6",
+  ];
+
   let note = random(notes);
 
   synth.triggerAttackRelease(note, "8n");
@@ -79,6 +122,11 @@ function draw() {
     p.edges();
     p.show();
   }
+
+  // -------------------- Click the screen Text --------------------
+  textAlign(CENTER, CENTER);
+  textSize(15);
+  text("Click the screen", width / 2, height / 2);
 }
 
 // -------------------- Particle Class --------------------
