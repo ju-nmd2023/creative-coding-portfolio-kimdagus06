@@ -1,15 +1,5 @@
 [
   {
-    "file": "experiments/nested-squares-part2.js",
-    "name": "Nested Squares",
-    "description": "This work is inspired by nested square patterns and line thickness variations. I created a piece featuring a grid of nested squares with different stroke weights and colors. The squares get smaller toward the center, giving a subtle impression of being in space."
-  },
-  {
-    "file": "experiments/rainyday.js",
-    "name": "Rainy Day",
-    "description": "Created a soft image by overlapping circles with random colors. It is inspired by raindrops on a rainy day and the rainbow reflected on them with a lowered transparency."
-  },
-  {
     "file": "experiments/rose-garden-window.js",
     "name": "Rose Garden Window",
     "description": "The main idea is to create a more structured and grid-like pattern where shapes are aligned in rows and columns, looking like a mosiac in a church window."
@@ -18,6 +8,16 @@
     "file": "experiments/nested-squares.js",
     "name": "Nested Squares",
     "description": "This work is inspired by nested square patterns and line thickness variations. I created a piece featuring a grid of nested squares with different stroke weights and colors. The squares get smaller toward the center, giving a subtle impression of being in space."
+  },
+  {
+    "file": "experiments/monochrome-nested-squares.js",
+    "name": "Monochrome Nested Squares",
+    "description": ""
+  },
+  {
+    "file": "experiments/rainyday.js",
+    "name": "Rainy Day",
+    "description": "Created a soft image by overlapping circles with random colors. It is inspired by raindrops on a rainy day and the rainbow reflected on them with a lowered transparency."
   },
   {
     "file": "experiments/sparkler.js",
