@@ -2,6 +2,7 @@
 // Inspired by:  https://type-01.com/creative-coding-processes-and-sci-fi-inspirations-with-vivek-thakker/
 // -------------------- References --------------------
 // Reference 1: Ruijadom. (n.d.). Blackhole. CodePen. https://codepen.io/ruijadom/pen/jGKjML
+
 let letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 let letterObjects = [];
 

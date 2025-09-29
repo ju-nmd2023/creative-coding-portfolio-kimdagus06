@@ -12,7 +12,7 @@
   {
     "file": "experiments/monochrome-nested-squares.js",
     "name": "Monochrome Nested Squares",
-    "description": ""
+    "description": "The size of each square changes depending on how far it is from the center. Each square also has slightly different stroke thickness and color, creating a lively, abstract pattern."
   },
   {
     "file": "experiments/rainyday.js",
@@ -33,6 +33,11 @@
     "file": "experiments/blackhole.js",
     "name": "Black Hole",
     "description": "It creates a dynamic field of rotating letters arranged around the center of the canvas. Each character orbits with its own speed, size, and brightness, leaving subtle motion trails that build a glowing, almost cosmic atmosphere."
+  },
+  {
+    "file": "experiments/follow-you.js",
+    "name": "Chasing Letters",
+    "description": "It sketch animates letters that smoothly follow the user's mouse cursor across the screen. Each letter has its own angle, radius, and speed, and moves with easing based on calculations, creating a dynamic, trailing effect that responds in real-time to user movement."
   },
   {
     "file": "experiments/green-flow-field.js",
