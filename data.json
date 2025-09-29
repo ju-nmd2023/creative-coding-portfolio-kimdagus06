@@ -1,5 +1,10 @@
 [
   {
+    "file": "experiments/nested-squares-part2.js",
+    "name": "Nested Squares",
+    "description": "This work is inspired by nested square patterns and line thickness variations. I created a piece featuring a grid of nested squares with different stroke weights and colors. The squares get smaller toward the center, giving a subtle impression of being in space."
+  },
+  {
     "file": "experiments/rainyday.js",
     "name": "Rainy Day",
     "description": "Created a soft image by overlapping circles with random colors. It is inspired by raindrops on a rainy day and the rainbow reflected on them with a lowered transparency."
