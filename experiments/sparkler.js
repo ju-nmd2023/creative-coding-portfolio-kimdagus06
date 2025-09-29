@@ -36,7 +36,6 @@ function draw() {
     if (particles[i].life >= particles[i].maxLife) {
       let p = particles[i];
       particles.splice(i, 1);
-      // chain reaction
       if (p.generation < 1) {
         createParticles(p.x, p.y, p.generation + 1);
       }
