@@ -19,6 +19,9 @@ function setup() {
 
   flowfield = new Array(cols * rows);
 
+  // Tone.js setup
+  synth = new Tone.Synth().toDestination();
+
   // ---------------- Radial Gradient Background ----------------
   drawRadialGradient();
   // ----------------------------------------------------------------
@@ -29,6 +32,16 @@ function setup() {
   }
 
   // background(20);
+}
+
+function mousePressed() {
+  Tone.start(); // Start the audio context on user interaction
+
+  // Random note from a predefined set
+  let notes = ["C4", "E4", "G4", "B4", "D5", "F5"];
+  let note = random(notes);
+
+  synth.triggerAttackRelease(note, "8n");
 }
 
 function drawRadialGradient() {
